@@ -30,7 +30,11 @@ export default function Navbar() {
             <img 
               src="./Logo_QuickS.png" 
               alt="QuickS Logo" 
-              style={{ height: '45px', width: 'auto' }} 
+              style={{ 
+                height: '45px', 
+                width: 'auto', 
+                filter: 'brightness(0)' // Esta linha deixa a logo preta
+              }} 
               className="transition-transform duration-300 group-hover:scale-105"
             />
             <span className="font-sans font-bold text-ig-text tracking-tighter text-2xl group-hover:tracking-normal transition-all duration-300">
