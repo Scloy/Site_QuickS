@@ -28,12 +28,12 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo and Name */}
           <div className="flex items-center space-x-3 cursor-pointer group">
-            <div className="relative w-8 h-8 rounded-full overflow-hidden mix-blend-multiply group-hover:scale-105 transition-transform duration-300">
+            <div className="relative w-8 h-8 rounded-full overflow-hidden group-hover:scale-105 transition-transform duration-300">
               <Image 
                 src="/logo.png" 
                 alt="QuickS Logo" 
                 fill 
-                className="object-cover brightness-0"
+                className="object-cover"
               />
             </div>
             <span className="font-sans font-medium text-ig-text tracking-wide text-sm uppercase group-hover:tracking-widest transition-all duration-300">
@@ -49,7 +49,7 @@ export default function Navbar() {
             <a href="#contact" className="hover:text-ig-text transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-ig-text hover:after:w-full after:transition-all after:duration-300">Contato</a>
           </nav>
 
-          {/* Action Button - Removed for Static Version */}
+          {/* Action Button - Static Version */}
           <div className="hidden md:block">
              <button 
                className="font-sans text-xs uppercase tracking-widest text-ig-text hover:opacity-70 transition-opacity"
