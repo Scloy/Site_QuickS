@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ig-canvas: #EAEAEA;
+  --color-ig-text: #1A1A1A;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --background: var(--color-ig-canvas);
+  --foreground: var(--color-ig-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Keep it light as per the design system, but provide a dark fallback if absolutely necessary. Immersive Garden is usually light/canvas colored. We'll stick to the canvas color. */
+    --background: #111111;
+    --foreground: #F0F0F0;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-serif); /* Use serif for body text by default in this cinematic theme */
+  overflow-x: hidden;
+}
+
+/* Subtle Paper Texture and Edge Glow */
+.bg-paper-texture {
+  /* Using a CSS pattern for subtle noise as a fallback if no image is available */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+.bg-edge-glow {
+  background: radial-gradient(circle, transparent 50%, rgba(74,144,226,0.15) 150%);
+}
+
+/* Custom selection */
+::selection {
+  background: rgba(74, 144, 226, 0.3);
+  color: inherit;
+}
