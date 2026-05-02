@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
@@ -26,10 +25,12 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-                 {/* Logo and Name */}
+          {/* Logo and Name */}
           <div className="flex items-center space-x-4 cursor-pointer group">
             <img 
-             <img src="./Logo_QuickS.png" alt="QuickS Logo" style={{ height: '50px' }} />
+              src="./Logo_QuickS.png" 
+              alt="QuickS Logo" 
+              style={{ height: '45px', width: 'auto' }} 
               className="transition-transform duration-300 group-hover:scale-105"
             />
             <span className="font-sans font-bold text-ig-text tracking-tighter text-2xl group-hover:tracking-normal transition-all duration-300">
