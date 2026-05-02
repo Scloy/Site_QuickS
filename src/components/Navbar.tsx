@@ -27,21 +27,15 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
                  {/* Logo and Name */}
-          <div 
-            className="flex items-center space-x-3 cursor-pointer group"
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          >
-            <div className="relative w-12 h-12 overflow-hidden transition-transform duration-300 group-hover:scale-105">
-              <Image 
-                src="/Logo_QuickS.png" // Usando o arquivo oficial
-                alt="QuickS Logo" 
-                fill 
-                className="object-contain" // "Contain" garante que a logo apareça inteira
-                priority
-              />
-            </div>
-            <span className="font-sans font-medium text-ig-text tracking-wide text-lg uppercase group-hover:tracking-widest transition-all duration-300">
-              QuickS
+          <div className="flex items-center space-x-4 cursor-pointer group">
+            <img 
+              src="/Logo_QuickS.png" 
+              alt="QuickS Logo" 
+              style={{ height: '50px', width: 'auto', display: 'block' }} 
+              className="transition-transform duration-300 group-hover:scale-105"
+            />
+            <span className="font-sans font-bold text-ig-text tracking-tighter text-2xl group-hover:tracking-normal transition-all duration-300">
+              QUICKS
             </span>
           </div>
 
