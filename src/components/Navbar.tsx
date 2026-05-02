@@ -29,9 +29,7 @@ export default function Navbar() {
                  {/* Logo and Name */}
           <div className="flex items-center space-x-4 cursor-pointer group">
             <img 
-              src="/Logo_QuickS.png" 
-              alt="QuickS Logo" 
-              style={{ height: '50px', width: 'auto', display: 'block' }} 
+             <img src="./Logo_QuickS.png" alt="QuickS Logo" style={{ height: '50px' }} />
               className="transition-transform duration-300 group-hover:scale-105"
             />
             <span className="font-sans font-bold text-ig-text tracking-tighter text-2xl group-hover:tracking-normal transition-all duration-300">
